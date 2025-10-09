@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Asignar Clase y Sede</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/asignar_clase.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="admin-header">
+    <div class="header-left">
+      <img src="img/logo.png" alt="Langway English School" class="logo">
+      <nav class="header-nav">
+        <a href="index.html">Home</a>
+        <a href="calendario.html">calendario</a>
+        <a href="pagos.html">Pagos</a>
+        <a href="soporte.html">Soporte</a>
+      </nav>
+    </div>
+    <div class="header-right">
+      <input type="search" placeholder="Buscar..." class="search-input">
+      <button class="search-btn">🔍</button>
+      <div class="user-profile">
+        <img src="img/user-avatar.png" alt="Usuario">
+      </div>
+    </div>
+  </header>
+
+  <!-- Contenido principal -->
+  <main class="main-content">
+    <!-- Layout de dos columnas -->
+    <div class="content-grid">
+      <!-- Columna izquierda: Formulario -->
+      <section class="form-section">
+        <h2>Asignar Clase y Sede</h2>
+        
+        <form id="asignarClaseForm">
+          <div class="form-group">
+            <label for="horario">Horario</label>
+            <input type="text" id="horario" placeholder="Seleccionar">
+          </div>
+
+          <div class="form-group">
+            <label for="sede">Sede</label>
+            <select id="sede" required>
+              <option value="">Seleccionar</option>
+              <option value="sede1">Sede Principal - Centro</option>
+              <option value="sede2">Sede Norte - Laureles</option>
+                <option value="sede3">Sede Sur - Envigado</option>
+            </select>
+          </div>
+
+          <div class="button-group">
+            <button type="button" class="btn-secondary">Guardar</button>
+            <button type="button" class="btn-primary">Atras</button>
+          </div>
+        </form>
+      </section>
+
+      <!-- Columna derecha: Calendario -->
+      <section class="calendar-section">
+        <div class="calendar-header">
+          <h2>Abril</h2>
+          <h2>2025</h2>
+        </div>
+        
+        <div class="calendar">
+          <div class="calendar-grid">
+            <div class="calendar-day header">L</div>
+            <div class="calendar-day header">M</div>
+            <div class="calendar-day header">M</div>
+            <div class="calendar-day header">J</div>
+            <div class="calendar-day header">V</div>
+            <div class="calendar-day header">S</div>
+            <div class="calendar-day header">D</div>
+            
+            <!-- Semana 1 -->
+            <div class="calendar-day"></div>
+            <div class="calendar-day">1</div>
+            <div class="calendar-day">2</div>
+            <div class="calendar-day">3</div>
+            <div class="calendar-day">4</div>
+            <div class="calendar-day">5</div>
+            <div class="calendar-day weekend">6</div>
+            
+            <!-- Semana 2 -->
+            <div class="calendar-day selected">7</div>
+            <div class="calendar-day">8</div>
+            <div class="calendar-day">9</div>
+            <div class="calendar-day">10</div>
+            <div class="calendar-day">11</div>
+            <div class="calendar-day">12</div>
+            <div class="calendar-day weekend">13</div>
+            
+            <!-- Semana 3 -->
+            <div class="calendar-day">14</div>
+            <div class="calendar-day">15</div>
+            <div class="calendar-day">16</div>
+            <div class="calendar-day">17</div>
+            <div class="calendar-day">18</div>
+            <div class="calendar-day">19</div>
+            <div class="calendar-day weekend">20</div>
+            
+            <!-- Semana 4 -->
+            <div class="calendar-day">21</div>
+            <div class="calendar-day">22</div>
+            <div class="calendar-day">23</div>
+            <div class="calendar-day">24</div>
+            <div class="calendar-day">25</div>
+            <div class="calendar-day">26</div>
+            <div class="calendar-day weekend">27</div>
+            
+            <!-- Semana 5 -->
+            <div class="calendar-day">28</div>
+            <div class="calendar-day">29</div>
+            <div class="calendar-day">30</div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>Visit us:</h3>
+        <p>South Street 46-A<br>Manchester<br>+11 222 333 444</p>
+      </div>
+      <div class="footer-section">
+        <h3>Monday - Thursday</h3>
+        <p>11:30 - 14:30, 18:00 - 22:30</p>
+        <h3>Friday - Saturday</h3>
+        <p>11:00 - 14:00, 18:00 - 22:30</p>
+      </div>
+      <div class="footer-section">
+        <h3>Inquiries at:</h3>
+        <p>sushilaboom@sushilaboom.com</p>
+      </div>
+      <div class="footer-section contact-form">
+        <h3>Contact form</h3>
+        <input type="text" placeholder="Full Name">
+        <textarea placeholder="Your Message"></textarea>
+        <button class="btn-send">Send</button>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/asignar_clase.js"></script>
+</body>
+</html>

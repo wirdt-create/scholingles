@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Registro del personal</title>
+  <link rel="stylesheet" href="ESchool.css" />
+</head>
+<body id="personal" class="body-personal">
+
+  <!-- 🔵 HEADER -->
+  <header class="personal-header">
+    <div class="header-left">
+        <div class="logo-login">
+            <img src="img/logo.png" alt="Logo Langway English School">
+        </div>
+      <nav class="header-nav-personal">
+        <a href="gestion_personal.html">Gestión Personal</a>
+        <a href="gestion_nomina.html">Gestión Nómina</a>
+      </nav>
+    </div>
+    <div class="header-right">
+      <input type="search" placeholder="Buscar..." class="search-input" />
+      <button class="search-btn">🔍</button>
+      <div class="user-profile">
+        <img src="img/user-avatar.png" alt="Usuario" />
+      </div>
+    </div>
+  </header>
+
+  <!-- 🟢 MAIN -->
+  <main class="form-content">
+    <h2>Registro del personal</h2>
+
+    <form id="registroPersonalForm" class="admin-form">
+      <div class="form-row">
+        <div class="input-group">
+          <label for="nombreCompleto">Nombre Completo</label>
+          <input type="text" id="nombreCompleto" placeholder="Juliana Mejia" required />
+        </div>
+
+        <div class="input-group">
+          <label for="tipoDocumento">Tipo de documento</label>
+          <select id="tipoDocumento" required>
+            <option value="">Selecciona...</option>
+            <option value="cc">Cédula de Ciudadanía</option>
+            <option value="ce">Cédula de Extranjería</option>
+            <option value="passport">Pasaporte</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="input-group">
+          <label for="documento">Documento</label>
+          <input type="text" id="documento" placeholder="1011123456522" required />
+        </div>
+
+        <div class="input-group">
+          <label for="celular">Celular</label>
+          <input type="tel" id="celular" placeholder="3000401234" required />
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="input-group">
+          <label for="agregarFoto">Agregar Foto</label>
+          <input type="file" id="agregarFoto" accept="image/*" />
+        </div>
+      </div>
+
+      <div class="button-group">
+        <button type="button" class="btn-secondary" onclick="window.history.back()">Cancelar</button>
+        <button type="submit" class="btn-primary">Agregar Docente</button>
+      </div>
+    </form>
+  </main>
+
+  <!-- 🟡 FOOTER -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>Visit us:</h3>
+        <p>South Street 46-A<br />Manchester<br />+11 222 333 444</p>
+      </div>
+
+      <div class="footer-section">
+        <h3>Monday - Thursday</h3>
+        <p>11:30 - 14:30, 18:00 - 22:30</p>
+        <h3>Friday - Saturday</h3>
+        <p>11:00 - 14:00, 18:00 - 22:30</p>
+      </div>
+
+      <div class="footer-section">
+        <h3>Inquiries at:</h3>
+        <p>sushilaboom@sushilaboom.com</p>
+      </div>
+
+      <div class="footer-section contact-form">
+        <h3>Contact form</h3>
+        <input type="text" placeholder="Full Name" />
+        <textarea placeholder="Your Message"></textarea>
+        <button class="btn-send">Send</button>
+      </div>
+    </div>
+    </footer>
+    <script src="js/registro_personal.js"></script>
+</body>
+</html>

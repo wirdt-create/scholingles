@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gestión de Profesores</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/gestion_profesores.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="admin-header">
+    <div class="header-left">
+      <img src="img/logo.png" alt="Langway English School" class="logo">
+      <nav class="header-nav">
+        <a href="index.html">Home</a>
+        <a href="calendario.html">calendario</a>
+        <a href="pagos.html">Pagos</a>
+        <a href="soporte.html">Soporte</a>
+      </nav>
+    </div>
+    <div class="header-right">
+      <input type="search" placeholder="Buscar..." class="search-input">
+      <button class="search-btn">🔍</button>
+      <div class="user-profile">
+        <img src="img/user-avatar.png" alt="Usuario">
+      </div>
+    </div>
+  </header>
+
+  <!-- Contenido principal -->
+  <main class="main-content">
+    <!-- Búsqueda superior -->
+    <div class="search-section-top">
+      <input type="search" id="searchProfesortop" placeholder="Buscar..." class="search-top">
+      <button class="btn-search-top">🔍</button>
+    </div>
+
+    <!-- Layout de dos columnas -->
+    <div class="content-grid">
+      <!-- Columna izquierda: Menú -->
+      <aside class="sidebar">
+        <h3>Gestión de Profesores</h3>
+        <nav class="sidebar-menu">
+          <a href="asignar_clase.html" class="menu-item">Asignar Clase y Sede</a>
+          <a href="cambio_sede.html" class="menu-item">Cambio de sede</a>
+          <a href="estado_alumno.html" class="menu-item">Estado del Alumno</a>
+          <a href="historial_nomina.html" class="menu-item">Historial de Nomina</a>
+          <a href="salir_docente.html" class="menu-item">Salir Docente</a>
+          <a href="gestion_horarios.html" class="menu-item">Gestión De Horarios</a>
+        </nav>
+      </aside>
+
+      <!-- Columna derecha: Info del docente -->
+      <section class="teacher-info">
+        <div class="teacher-card">
+          <div class="teacher-details">
+            <p><strong>Nombre Docente</strong></p>
+            <p><strong>Documento</strong></p>
+            <p><strong>Celular</strong></p>
+            <p><strong>Sede asignada</strong></p>
+            <p><strong>Estado</strong></p>
+          </div>
+          <div class="teacher-photo">
+            <img src="img/teacher.png" alt="Foto del Docente">
+          </div>
+        </div>
+      </section>
+    </div>  
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>Visit us:</h3>
+        <p>South Street 46-A<br>Manchester<br>+11 222 333 444</p>
+      </div>
+      <div class="footer-section">
+        <h3>Monday - Thursday</h3>
+        <p>11:30 - 14:30, 18:00 - 22:30</p>
+        <h3>Friday - Saturday</h3>
+        <p>11:00 - 14:00, 18:00 - 22:30</p>
+      </div>
+      <div class="footer-section">
+        <h3>Inquiries at:</h3>
+        <p>sushilaboom@sushilaboom.com</p>
+      </div>
+      <div class="footer-section contact-form">
+        <h3>Contact form</h3>
+        <input type="text" placeholder="Full Name">
+        <textarea placeholder="Your Message"></textarea>
+        <button class="btn-send">Send</button>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/gestion_profesores.js"></script>
+</body>
+</html>

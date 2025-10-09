@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="ESchool.css">
+</head>
+<body>
+    <!-- Header / Nav -->
+    <header class="site-header">
+    <div class="container header-inner">
+        <div class="logo">
+        <img src="img/logo.png" alt="Logo" />
+        </div>
+
+        <nav class="main-nav">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#servicios">Servicios</a></li>
+            <li><a href="#soporte">Soporte</a></li>
+        </ul>
+        </nav>
+
+        <div class="auth">
+        <!-- Aquí conectamos al login.html -->
+        <a href="login.html" class="btn login">Log In</a>
+        <a href="register.html" class="btn signup">Sign Up</a>
+        </div>
+
+        <!-- botón menú móvil -->
+        <button class="nav-toggle" aria-label="Abrir menú">☰</button>
+    </div>
+    </header>
+
+    <!-- Hero -->
+    <section id="home" class="hero-index">
+    <div class="container hero-inner">
+        <div class="hero-left">
+        <h1>Simple y Eficaz</h1>
+        <p>Con nuestra página web podrás administrar los pagos y las fechas para tus clases de una forma muy fácil y sencilla, todo en un mismo lugar.</p>
+        </div>
+
+        <div class="hero-right">
+        <div class="teacher-card">
+            <div class="card-text">
+            <h3>Margarita Rúa,</h3>
+            <p>Our teacher of this month,<br><strong>congratulations!</strong></p>
+            </div>
+            <div class="card-image">
+            <img src="img/teacher.png" alt="Teacher" />
+            </div>
+        </div>
+        </div>
+    </div>
+    </section>
+
+    <!-- Servicios -->
+    <section id="servicios" class="section">
+    <div class="container">
+        <h2>Servicios</h2>
+        <div class="services-grid">
+        <div class="service-card">
+            <h3>Clases Personalizadas</h3>
+            <p>Aprende inglés con un plan adaptado a tus necesidades y nivel.</p>
+        </div>
+        <div class="service-card">
+            <h3>Calendario Online</h3>
+            <p>Consulta fácilmente tus horarios y fechas importantes.</p>
+        </div>
+        <div class="service-card">
+            <h3>Pagos Seguros</h3>
+            <p>Realiza tus pagos de manera rápida, sencilla y confiable.</p>
+        </div>
+        </div>
+    </div>
+    </section>
+
+    <!-- Soporte -->
+    <section id="soporte" class="section soporte">
+    <div class="container">
+        <h2>Soporte</h2>
+        <p>¿Tienes alguna pregunta o problema? Escríbenos y te ayudaremos lo antes posible.</p>
+
+        <form class="support-form">
+        <input type="text" name="nombre" placeholder="Tu nombre" required>
+        <input type="email" name="email" placeholder="Tu correo electrónico" required>
+        <textarea name="mensaje" rows="5" placeholder="Escribe tu mensaje aquí..." required></textarea>
+        <button type="submit" class="btn-send">Enviar</button>
+        </form>
+
+        <div class="support-info">
+        <p><strong>Email:</strong> soporte@tupagina.com</p>
+        <p><strong>Teléfono:</strong> +57 300 000 0000</p>
+        <p><a href="https://wa.me/573000000000" target="_blank">Chatea con nosotros en WhatsApp</a></p>
+        </div>
+    </div>
+    </section>
+</body>
+</html>
