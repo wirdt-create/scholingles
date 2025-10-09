@@ -23,7 +23,7 @@ app.get("/ping", async (req, res) => {
 });
 
 // 🏠 Cualquier ruta no encontrada → index.html (por si es SPA o HTML normal)
-app.get("*", (req, res) => {
+app.get(/.*/, (req, res) => {
   res.sendFile(path.join(__dirname, "public", "index.html"));
 });
 
