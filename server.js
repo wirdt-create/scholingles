@@ -8,6 +8,11 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
+// montar rutas de usuarios
+const usuariosRoutes = require("./routes/usuarios");
+app.use("/api/usuarios", usuariosRoutes);
+
+
 // 📁 Servir el frontend (archivos estáticos)
 app.use(express.static(path.join(__dirname, "public")));
 
